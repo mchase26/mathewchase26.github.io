@@ -9,7 +9,7 @@ Welcome to my cybersecurity portfolio! This repository showcases hands-on cybers
 
 # 👋 About Me
 
-Hello! My name is **Mat C**, and I am an aspiring Cybersecurity Analyst with a passion for building real-world labs to strengthen my technical skills.
+Hello! My name is **Mathew Chase**, and I am an aspiring Cybersecurity Analyst with a passion for building real-world labs to strengthen my technical skills.
 
 This portfolio highlights projects involving:
 
