@@ -1,26 +1,26 @@
-# 🛡️ Cybersecurity Portfolio
+# Cybersecurity Portfolio
 
 Welcome to my cybersecurity portfolio! This repository showcases hands-on cybersecurity labs and projects designed to demonstrate practical experience with networking, system administration, virtualization, security monitoring, and defensive security.
 
 > **Portfolio Website:**  
-> https://YOURUSERNAME.github.io/Cybersecurity-Portfolio/
+> https://mchase26.github.io/Cybersecurity-Portfolio/
 
 ---
 
-# 👋 About Me
+# About Me
 
 Hello! My name is **Mathew Chase**, and I am an aspiring Cybersecurity Analyst with a passion for building real-world labs to strengthen my technical skills.
 
 This portfolio highlights projects involving:
 
-- 🔐 Network Security
-- 🖥️ System Administration
-- 🌐 Networking
-- 🛡️ Firewall Configuration
-- 📊 SIEM & Log Analysis
-- 🐧 Linux Administration
-- ☁️ Cloud Technologies
-- 💻 Virtualization
+- Network Security
+- System Administration
+- Networking
+- Firewall Configuration
+- SIEM & Log Analysis
+- Linux Administration
+- Cloud Technologies
+- Virtualization
 
 Each project includes detailed documentation, screenshots, configurations, and lessons learned.
 
@@ -69,18 +69,15 @@ Each project includes detailed documentation, screenshots, configurations, and l
 
 - Python
 - HTML
-- CSS
-- JavaScript
-- Git
 - GitHub
 
 ---
 
-# 📂 Featured Projects
+# Featured Projects
 
 ---
 
-## 🛡️ OPNsense Firewall Lab
+## OPNsense Firewall Lab
 
 **Objective**
 
@@ -101,7 +98,7 @@ labs/opnsense-firewall/
 
 ---
 
-## 🖥️ Active Directory Lab
+## Active Directory Lab
 
 **Objective**
 
@@ -123,7 +120,7 @@ labs/active-directory/
 
 ---
 
-## 📊 Splunk SIEM Lab
+## Splunk SIEM Lab
 
 **Objective**
 
@@ -143,7 +140,7 @@ labs/splunk/
 
 ---
 
-## 🐉 Kali Linux Lab
+## Kali Linux Lab
 
 **Objective**
 
@@ -162,7 +159,7 @@ labs/kali-linux/
 
 ---
 
-# 📜 Certifications
+# Certifications
 
 ## Current
 
@@ -176,7 +173,7 @@ labs/kali-linux/
 
 ---
 
-# 📅 Future Projects
+# Future Projects
 
 - Windows Server Hardening
 - Azure Active Directory
@@ -193,22 +190,22 @@ labs/kali-linux/
 
 ---
 
-# 📸 Every Project Includes
+# Every Project Includes
 
 Each lab contains:
 
-- 🎯 Project Objective
-- 📖 Overview
-- 🖥️ Virtual Environment
-- 🌐 Network Diagram
-- ⚙️ Configuration Steps
-- 📸 Screenshots
-- 💻 Commands Used
-- 🧠 Lessons Learned
+-  Project Objective
+-  Overview
+-  Virtual Environment
+-  Network Diagram
+-  Configuration Steps
+-  Screenshots
+-  Commands Used
+-  Lessons Learned
 
 ---
 
-# 📁 Repository Structure
+# Repository Structure
 
 ```text
 Cybersecurity-Portfolio/
