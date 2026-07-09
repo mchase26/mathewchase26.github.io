@@ -231,7 +231,7 @@ if(footerYear){
 
 
     footerYear.innerHTML =
-    `© ${year} Mat C | Cybersecurity Portfolio`;
+    `© ${year} Mathew Chase | Cybersecurity Portfolio`;
 
 
 }
