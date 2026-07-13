@@ -1,7 +1,5 @@
 # Cybersecurity Portfolio
 
-# Cybersecurity Portfolio
-
 Welcome to my cybersecurity portfolio! This repository showcases hands-on cybersecurity labs and projects that demonstrate practical experience in networking, system administration, virtualization, firewall administration, security monitoring, and defensive security. Each project is designed to simulate real-world enterprise environments while documenting the planning, implementation, validation, and troubleshooting process.
 
 I created this GitHub portfolio in July 2026 to provide a centralized location where employers can review my technical skills, lab environments, configurations, network diagrams, screenshots, and project documentation. My goal is to demonstrate not only my technical knowledge but also my ability to document work clearly and validate successful implementations.
