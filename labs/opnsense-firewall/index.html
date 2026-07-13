@@ -1,1 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>OPNsense Firewall Lab | Cybersecurity Portfolio</title>
+
+
+<link rel="stylesheet" href="../../styles.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+
+<header class="navbar">
+
+
+<div class="logo">
+
+MC<span>.</span>
+
+</div>
+
+
+
+<nav>
+
+<a href="../../index.html">
+
+Home
+
+</a>
+
+
+<a href="../../index.html#projects">
+
+Projects
+
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<!-- Hero -->
+
+
+<section class="hero project-hero">
+
+
+<div class="hero-content">
+
+
+<p class="tag">
+
+NETWORK SECURITY LAB
+
+</p>
+
+
+<h1>
+
+OPNsense Firewall
+
+<br>
+
+<span>Virtual Network Security Environment</span>
+
+</h1>
+
+
+
+<p class="hero-description">
+
+Designed and configured a virtual firewall environment
+using OPNsense to practice network security,
+routing, NAT, DHCP, and firewall administration.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Project Overview -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Project Overview
+
+</h2>
+
+
+<div class="about-box">
+
+
+<p>
+
+The objective of this lab was to deploy OPNsense as a
+virtual firewall between an internal LAN network and the
+internet-facing WAN interface.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+This project simulated a small business network where
+security policies, traffic filtering, and network services
+must be properly configured and maintained.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Environment -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Lab Environment
+
+</h2>
+
+
+
+<div class="skills">
+
+
+<div class="skill">
+
+OPNsense Firewall
+
+</div>
+
+
+<div class="skill">
+
+VirtualBox
+
+</div>
+
+
+<div class="skill">
+
+Ubuntu Linux
+
+</div>
+
+
+<div class="skill">
+
+Windows Client
+
+</div>
+
+
+<div class="skill">
+
+Private LAN Network
+
+</div>
+
+
+<div class="skill">
+
+NAT Networking
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Network Architecture -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Network Architecture
+
+</h2>
+
+
+
+<div class="about-box">
+
+
+<pre>
+
+Internet
+
+    |
+
+    |
+
+WAN Interface
+
+    |
+
+OPNsense Firewall
+
+    |
+
+LAN Interface
+
+192.168.10.0/24
+
+    |
+
+Client Machines
+
+
+</pre>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Configuration -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Configuration Completed
+
+</h2>
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+WAN Configuration
+
+</h3>
+
+
+<p>
+
+Configured external firewall interface
+with internet connectivity and gateway access.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+LAN Configuration
+
+</h3>
+
+
+<p>
+
+Created internal network segment:
+
+<br>
+
+192.168.10.0/24
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+DHCP Services
+
+</h3>
+
+
+<p>
+
+Configured DHCP server to automatically assign
+addresses to internal systems.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+Firewall Rules
+
+</h3>
+
+
+<p>
+
+Created and tested firewall policies controlling
+allowed and blocked network traffic.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+NAT Configuration
+
+</h3>
+
+
+<p>
+
+Configured outbound NAT to allow internal devices
+to communicate with external networks.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Screenshots -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Screenshots
+
+</h2>
+
+
+
+<div class="projects">
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+Network Topology
+
+</h3>
+
+
+<img src="screenshots/topology.png"
+width="100%"
+alt="Network Topology">
+
+
+</div>
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+Firewall Rules
+
+</h3>
+
+
+<img src="screenshots/firewall-rules.png"
+width="100%"
+alt="Firewall Rules">
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+DHCP Configuration
+
+</h3>
+
+
+<img src="screenshots/dhcp.png"
+width="100%"
+alt="DHCP">
+
+
+</div>
+
+
+
+
+
+<div class="project-card">
+
+
+<h3>
+
+Connectivity Testing
+
+</h3>
+
+
+<img src="screenshots/testing.png"
+width="100%"
+alt="Testing">
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Lessons Learned -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Lessons Learned
+
+</h2>
+
+
+
+<div class="about-box">
+
+
+<ul>
+
+
+<li>
+
+Understanding firewall traffic flow
+
+</li>
+
+
+<li>
+
+Configuring secure network segmentation
+
+</li>
+
+
+<li>
+
+Troubleshooting routing issues
+
+</li>
+
+
+<li>
+
+Managing DHCP and NAT services
+
+</li>
+
+
+<li>
+
+Documenting security configurations
+
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 Mat C | Cybersecurity Portfolio
+
+</p>
+
+</footer>
+
+
+
+
+<script src="../../script.js"></script>
+
+
+</body>
+
+</html>
