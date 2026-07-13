@@ -1,6 +1,15 @@
 # Cybersecurity Portfolio
 
-Welcome to my cybersecurity portfolio! This repository showcases hands-on cybersecurity labs and projects designed to demonstrate practical experience with networking, system administration, virtualization, security monitoring, and defensive security.
+# Cybersecurity Portfolio
+
+Welcome to my cybersecurity portfolio! This repository showcases hands-on cybersecurity labs and projects that demonstrate practical experience in networking, system administration, virtualization, firewall administration, security monitoring, and defensive security. Each project is designed to simulate real-world enterprise environments while documenting the planning, implementation, validation, and troubleshooting process.
+
+I created this GitHub portfolio in July 2026 to provide a centralized location where employers can review my technical skills, lab environments, configurations, network diagrams, screenshots, and project documentation. My goal is to demonstrate not only my technical knowledge but also my ability to document work clearly and validate successful implementations.
+
+This portfolio is continuously expanding as I complete new labs and develop additional cybersecurity skills. Future projects will include SIEM engineering, threat detection, network security, cloud security, identity and access management, scripting, and incident response.
+
+Thank you for taking the time to visit my portfolio. I appreciate your interest and hope these projects provide insight into my passion for cybersecurity and my commitment to continuous learning.
+
 
 > **Portfolio Website:**  
 > https://mchase26.github.io/mathewchase26.github.io/
