@@ -305,17 +305,11 @@ Client Machines
 </section>
 
 
-
-
-
-
-
-
-<!-- Configuration -->
-
+<!-- ==========================
+CONFIGURATION COMPLETED
+========================== -->
 
 <section class="section">
-
 
 <h2 class="section-title">
 
@@ -323,244 +317,147 @@ Configuration Completed
 
 </h2>
 
+<!-- WAN -->
 
+<div class="config-item">
 
-<div class="project-card">
+    <div class="config-image">
 
+        <img src="screenshots/wan-config.png"
+             alt="WAN Configuration">
 
-<h3>
+    </div>
 
-WAN Configuration
+    <div class="config-text">
 
-</h3>
+        <h3>WAN Configuration</h3>
 
+        <p>
 
-<p>
+        Configured the WAN interface using a NAT adapter.
+        Verified internet connectivity and proper gateway
+        assignment.
 
-Configured external firewall interface
-with internet connectivity and gateway access.
+        </p>
 
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-LAN Configuration
-
-</h3>
-
-
-<p>
-
-Created internal network segment:
-
-<br>
-
-192.168.10.0/24
-
-</p>
-
+    </div>
 
 </div>
 
 
 
+<!-- LAN -->
 
+<div class="config-item">
 
-<div class="project-card">
+    <div class="config-image">
 
+        <img src="screenshots/lan-config.png"
+             alt="LAN Configuration">
 
-<h3>
+    </div>
 
-DHCP Services
+    <div class="config-text">
 
-</h3>
+        <h3>LAN Configuration</h3>
 
+        <p>
 
-<p>
+        Configured the internal LAN network using
+        192.168.10.1/24 as the gateway.
 
-Configured DHCP server to automatically assign
-addresses to internal systems.
+        </p>
 
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-Firewall Rules
-
-</h3>
-
-
-<p>
-
-Created and tested firewall policies controlling
-allowed and blocked network traffic.
-
-</p>
-
+    </div>
 
 </div>
 
 
 
+<!-- DHCP -->
 
+<div class="config-item">
 
-<div class="project-card">
+    <div class="config-image">
 
+        <img src="screenshots/dhcp.png"
+             alt="DHCP Configuration">
 
-<h3>
+    </div>
 
-NAT Configuration
+    <div class="config-text">
 
-</h3>
+        <h3>DHCP Server</h3>
 
+        <p>
 
-<p>
+        Enabled DHCP and configured an address pool
+        for internal clients.
 
-Configured outbound NAT to allow internal devices
-to communicate with external networks.
+        </p>
 
-</p>
-
+    </div>
 
 </div>
 
 
+
+<!-- NAT -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/nat.png"
+             alt="NAT Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Outbound NAT</h3>
+
+        <p>
+
+        Verified automatic outbound NAT allowing
+        LAN systems to communicate with the internet.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- FIREWALL -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/firewall-rules.png"
+             alt="Firewall Rules">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Firewall Rules</h3>
+
+        <p>
+
+        Created firewall policies allowing LAN traffic
+        while restricting unauthorized communication.
+
+        </p>
+
+    </div>
+
+</div>
 
 </section>
 
-
-
-
-
-
-
-
-
-<!-- Screenshots -->
-
-
-<section class="section">
-
-
-<h2 class="section-title">
-
-Screenshots
-
-</h2>
-
-
-
-<div class="projects">
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-Network Topology
-
-</h3>
-
-
-<img src="screenshots/topology.png"
-width="100%"
-alt="Network Topology">
-
-
-</div>
-
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-Firewall Rules
-
-</h3>
-
-
-<img src="screenshots/firewall-rules.png"
-width="100%"
-alt="Firewall Rules">
-
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-DHCP Configuration
-
-</h3>
-
-
-<img src="screenshots/dhcp.png"
-width="100%"
-alt="DHCP">
-
-
-</div>
-
-
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-Connectivity Testing
-
-</h3>
-
-
-<img src="screenshots/testing.png"
-width="100%"
-alt="Testing">
-
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
 
 
 
