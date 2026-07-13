@@ -270,9 +270,34 @@ CONFIGURATION COMPLETED
 
 <h2 class="section-title">
 
-Configuration Completed
+Lab Screenshots and Description
 
 </h2>
+<!-- Startup -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="labs/opnsense-firewall/screenshots/OPNSense_Startup.png"
+             alt="OPNSense Startup">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>OPNSense Firewall Terminal Startup</h3>
+
+        <p>
+
+        Installed OPNSense Firewall OS into Virtualbox. Terminal started up
+        for firwall configuration.
+
+        </p>
+
+    </div>
+
+</div>
 
 <!-- WAN -->
 
@@ -280,7 +305,7 @@ Configuration Completed
 
     <div class="config-image">
 
-        <img src="screenshots/wan-config.png"
+        <img src="labs/opnsense-firewall/screenshots/OPNSense_WAN_LAN_IP_Assignment.png"
              alt="WAN Configuration">
 
     </div>
@@ -291,9 +316,9 @@ Configuration Completed
 
         <p>
 
-        Configured the WAN interface using a NAT adapter.
-        Verified internet connectivity and proper gateway
-        assignment.
+        Configured WAN and LAN in terminal. Statically assigned
+        LAN IP address as the gateway to proper VLAN (192.168.10.1).
+        WAN IP dynamically assigned to NAT adapter on VM (10.0.x.x).
 
         </p>
 
@@ -303,25 +328,25 @@ Configuration Completed
 
 
 
-<!-- LAN -->
+<!-- Connectivity -->
 
 <div class="config-item">
 
     <div class="config-image">
 
-        <img src="screenshots/lan-config.png"
+        <img src="labs/opnsense-firewall/screenshots/OPNSense_Ping_Confirmation.png"
              alt="LAN Configuration">
 
     </div>
 
     <div class="config-text">
 
-        <h3>LAN Configuration</h3>
+        <h3>Connectivity Confirmation</h3>
 
         <p>
 
-        Configured the internal LAN network using
-        192.168.10.1/24 as the gateway.
+        Confirmed successful LAN-to-WAN communication by pinging 8.8.8.8 and google.com, 
+        validating Internet connectivity and functional DNS resolution.
 
         </p>
 
