@@ -969,22 +969,24 @@ footer {
 
 
 /* ==========================================
-   CONFIGURATION SECTION
+   OPNsense Firewall Lab
 ========================================== */
 
 .config-item{
 
     display:grid;
 
-    grid-template-columns:420px 1fr;
+    grid-template-columns:60% 40%;
 
     gap:40px;
 
     align-items:center;
 
-    margin-bottom:60px;
+    max-width:1600px;
 
-    padding:30px;
+    margin:60px auto;
+
+    padding:35px;
 
     background:rgba(255,255,255,.05);
 
@@ -998,6 +1000,8 @@ footer {
 
     width:100%;
 
+    max-width:800px;
+
     border-radius:15px;
 
     border:1px solid rgba(255,255,255,.15);
@@ -1005,27 +1009,6 @@ footer {
     box-shadow:0 15px 40px rgba(0,0,0,.35);
 
 }
-
-.config-text h3{
-
-    color:#60a5fa;
-
-    font-size:28px;
-
-    margin-bottom:20px;
-
-}
-
-.config-text p{
-
-    color:#cbd5e1;
-
-    font-size:17px;
-
-    line-height:1.8;
-
-}
-
 
 
 /* ==========================================
