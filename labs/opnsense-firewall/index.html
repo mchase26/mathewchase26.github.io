@@ -494,6 +494,174 @@ Lab Screenshots and Description
 
 </div>
 
+<!-- Verify ports are blocked -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_port_status_update.png"
+             alt="port status">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify ports are being blcoked</h3>
+
+        <p>
+
+        Went into powershell and ran "Test-NetConnection" on the Ubuntu Server Host for
+        ports 445 and 80. The cmdlet verifies that port 445 did NOT succeed a TCP test,
+        but port 80 did, as the firewall rule has port 80 as "Allowed" in the rule set.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Apache Server Config -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_Apache_status.png"
+             alt="Apache Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Apache Web Server Online</h3>
+
+        <p>
+
+        Installed and updated Apache Web Server on Ubuntu. Status shows that it
+        is online and active via IP address 192.168.10.20. 
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- Verify Apache GUI -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_Apache_Webpage.png"
+             alt="Apache Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Apache Web Server Online</h3>
+
+        <p>
+
+        Verified that Apache is online by accessing the GUI on the
+        Windows host device via 192.168.10.20.
+        All services (Apache, OPNSense, and Windows) are actively online
+        and running in this state. 
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Packet Capture Analysis -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_icmp_ws.png"
+             alt="Packet Capture Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>ICMP Packket Analysis</h3>
+
+        <p>
+
+        Verified that packets are moving throughout the network.
+        Started with ICMP, we can verify that we see replies and 
+        requests from all devices on the network. Starting with
+        OPNSense (192.168.10.1) to the Windows VLAN (192.168.10.10).
+        We also verified the Apache Server (192.168.10.20) is receiving
+        replies from the Windows machine (192.168.10.10).
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- TCP Handshake -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_tcp_3whs.png"
+             alt="TCP Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify TCP Communication</h3>
+
+        <p>
+
+        In Wireshark, the packets captured a successfull HTTP
+        communication between the Windows 11 Client and the 
+        Apache Web Server through the OPNSense Firewall. Traffice confirmed TCP
+        Connectivity, HTTP Get Requests, and HTTP 200 OK responses while demonstrating
+        packet inspection and network troubleshooting skills. 
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- TCP Dump -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_tcp_dump_p80.png"
+             alt="TCP Dump">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>tcpdump analysis</h3>
+
+        <p>
+
+        I also used tcpdump to capture packets on the Apache Server side.
+        The packet capture confirms successful TCP communication, HTTP GET requests,
+        HTTP 200 OK responses from the Apache web server, and proper routing through the OPNsense firewall.
+        This analysis demonstrates practical experience with packet inspection, protocol analysis,
+        and troubleshooting enterprise network communications.
+
+        </p>
+
+    </div>
+
+</div>
 
 </section>
 
