@@ -666,76 +666,75 @@ Lab Screenshots and Description
 </section>
 
 
-
-
-
-
-
-
-
-<!-- Lessons Learned -->
-
+<!-- ==========================
+LESSONS LEARNED & INCIDENT REPORT
+========================== -->
 
 <section class="section">
 
-
 <h2 class="section-title">
 
-Lessons Learned
+Project Summary
 
 </h2>
 
+<div class="summary-grid">
 
+    <!-- LEFT COLUMN -->
 
-<div class="about-box">
+    <div class="summary-card">
 
+        <h3>Lessons Learned</h3>
 
-<ul>
+        <ul>
 
+            <li>Configured WAN and LAN interfaces.</li>
 
-<li>
+            <li>Implemented DHCP services.</li>
 
-Understanding firewall traffic flow
+            <li>Validated DNS resolution.</li>
 
-</li>
+            <li>Created and tested firewall rules.</li>
 
+            <li>Troubleshot network connectivity issues.</li>
 
-<li>
+        </ul>
 
-Configuring secure network segmentation
+    </div>
 
-</li>
+    <!-- RIGHT COLUMN -->
 
+    <div class="summary-card">
 
-<li>
+        <h3>Incident Response Report</h3>
 
-Troubleshooting routing issues
+        <p><strong>Severity:</strong> Informational</p>
 
-</li>
+        <p><strong>Status:</strong> Resolved</p>
 
+        <p><strong>Root Cause:</strong> Initial WAN configuration prevented outbound connectivity and DNS resolution.</p>
 
-<li>
+        <p><strong>Impact:</strong> Internal hosts could not access external resources until the issue was corrected.</p>
 
-Managing DHCP and NAT services
+        <p><strong>Resolution:</strong> Configured the WAN interface, verified gateway assignment, confirmed outbound NAT, and validated connectivity using ICMP and DNS tests.</p>
 
-</li>
+        <p><strong>Verification:</strong></p>
 
+        <ul>
 
-<li>
+            <li>✓ Ping 8.8.8.8 successful</li>
 
-Documenting security configurations
+            <li>✓ Ping google.com successful</li>
 
-</li>
+            <li>✓ Web browsing functional</li>
 
+        </ul>
 
-</ul>
-
+    </div>
 
 </div>
 
-
 </section>
-
 
 
 
