@@ -386,7 +386,7 @@ Lab Screenshots and Description
 
 
 
-<!-- NAT -->
+<!-- IP Config-->
 
 <div class="config-item">
 
@@ -420,25 +420,80 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/firewall-rules.png"
+        <img src="screenshots/VirtualBox_UbuntuS_network_config.png"
              alt="Firewall Rules">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Firewall Rules</h3>
+        <h3>Ubuntu Server Network Configuration</h3>
 
         <p>
 
-        Created firewall policies allowing LAN traffic
-        while restricting unauthorized communication.
+        Configured yaml file in nano to assign static IP address and Default
+        Gateway address. Ubuntu Server was put on VLAN 192.168.10.20/24.
 
         </p>
 
     </div>
 
 </div>
+
+<!-- Ubuntu Network Connectivity -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_Ping.png"
+             alt="NAT Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify Ubuntu Server Connectivity</h3>
+
+        <p>
+
+        Used Ping to verify connectivity on the internet using 8.8.8.8
+        and Google.com. 
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- Firewall Configuration -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_Port_Config.png"
+             alt="Firewall Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Firewall GUI Configuration</h3>
+
+        <p>
+
+        Logged into the firewall's GUI on the Windows client. Blocked 
+        insecure ports on LAN side, such as Server Message Block (SMB port 445), Telnet (port 23),
+        and Remote Desktop Protocol (port 3389). 
+
+        </p>
+
+    </div>
+
+</div>
+
 
 </section>
 
