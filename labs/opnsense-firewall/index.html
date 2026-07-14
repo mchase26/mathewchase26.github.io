@@ -702,11 +702,17 @@ Project Summary
 
         <ul>
 
+            <li>Static IP configuration requires proper gateway assignment.</li>
+            
             <li>Configured WAN and LAN interfaces.</li>
 
             <li>Implemented DHCP services.</li>
 
             <li>Validated DNS resolution.</li>
+            
+            <li>Firewall rules should follow least privilege for security.</li>
+
+            <li>Packet captures validate firewall behavior.</li>
 
             <li>Created and tested firewall rules.</li>
 
@@ -720,29 +726,22 @@ Project Summary
 
     <div class="summary-card">
 
-        <h3>Incident Response Report</h3>
+        <h3>Incident  Report</h3>
 
         <p><strong>Severity:</strong> Informational</p>
 
         <p><strong>Status:</strong> Resolved</p>
 
-        <p><strong>Root Cause:</strong> Initial WAN configuration prevented outbound connectivity and DNS resolution.</p>
+        <p><strong>Root Cause:</strong> Internal Linux server was unable to communicate with the firewall gateway.</p>
 
         <p><strong>Impact:</strong> Internal hosts could not access external resources until the issue was corrected.</p>
 
-        <p><strong>Resolution:</strong> Configured the WAN interface, verified gateway assignment, confirmed outbound NAT, and validated connectivity using ICMP and DNS tests.</p>
+        <p><strong>Investigation: </strong> Verified IP addressing, subnet mask, and routing. Inspected ARP cache and observed failed neighbor resolution. Determined the firewall LAN interface was assigned to the incorrect virtual adapter.</p>
 
-        <p><strong>Verification:</strong></p>
+        <p><strong>Resolution:</strong> Corrected the OPNsense interface assignment, restored ARP communication, and validated connectivity using ICMP, HTTP, and packet captures.</p>
 
-        <ul>
+        <p><strong>Verification:</strong> Confirmed successful host-to-host communication, Internet access, Apache web service availability, and firewall log entries by using Packet Capture Toools and Ping.</p>
 
-            <li>✓ Ping 8.8.8.8 successful</li>
-
-            <li>✓ Ping google.com successful</li>
-
-            <li>✓ Web browsing functional</li>
-
-        </ul>
 
     </div>
 
