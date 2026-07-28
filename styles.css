@@ -1293,3 +1293,26 @@ nav a.active {
 .next-btn {
     right: 10px;
 }
+
+/* ------------------------------------------
+   FIX: SLIDER IFRAME & INTERACTION
+------------------------------------------ */
+
+/* 1. Prevent invisible inactive slides from blocking mouse clicks */
+.slide {
+    pointer-events: none;
+}
+
+.slide.active {
+    pointer-events: auto;
+}
+
+/* 2. Make the Vimeo iframe fill the slide container and receive clicks */
+.slide iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
