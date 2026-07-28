@@ -1304,7 +1304,7 @@ nav a.active {
 
 /* Lock right arrow to right side of the photo */
 .next-btn {
-    right: -40px !important;
+    right: -120px !important;
     left: auto !important;
 }
 }
