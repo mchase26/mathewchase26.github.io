@@ -1263,37 +1263,44 @@ nav a.active {
 }
 
 
+/* Container must be relative so position: absolute pins to ITS edges */
 .hero-card {
-    position: relative; /* Container reference for absolute positioning */
+    position: relative !important;
+    display: inline-flex; /* or flex */
+    justify-content: center;
+    align-items: center;
 }
 
+/* Base style for both arrows */
 .slider-btn {
-    position: absolute !important; /* Force out of flex layout */
+    position: absolute !important;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     padding: 12px 16px;
     cursor: pointer;
-    z-index: 20; /* Ensures arrows sit on top of images/videos */
-    border-radius: 6px;
-    transition: background 0.3s ease, transform 0.2s ease;
+    z-index: 30; /* Higher than iframe to stay clickable */
+    border-radius: 8px;
+    transition: background 0.3s ease;
 }
 
 .slider-btn:hover {
     background: rgba(0, 0, 0, 0.9);
 }
 
-/* Pin previous button strictly to the left edge */
+/* Pin to the left edge inside the card */
 .prev-btn {
-    left: -20px; /* Set to 10px if you want it inside the card instead of hovering slightly outside */
+    left: 15px !important;
+    right: auto !important;
 }
 
-/* Pin next button strictly to the right edge */
+/* Pin to the right edge inside the card */
 .next-btn {
-    right: -20px; /* Set to 10px if you want it inside the card instead of hovering slightly outside */
+    right: 15px !important;
+    left: auto !important;
 }
 /* ------------------------------------------
    FIX: SLIDER IFRAME & INTERACTION
