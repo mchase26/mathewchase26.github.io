@@ -1261,3 +1261,35 @@ nav a.active {
 }
 
 }
+
+
+.hero-card {
+    position: relative; /* Essential for absolute arrow positioning */
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 12px 16px;
+    cursor: pointer;
+    z-index: 20; /* Ensures buttons sit on top of video/images */
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
