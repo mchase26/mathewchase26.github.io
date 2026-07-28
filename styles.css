@@ -1271,36 +1271,42 @@ nav a.active {
     align-items: center;
 }
 
-/* Base style for both arrows */
+/* Ensure slider box is the relative parent for the arrows */
+.media-slider {
+    position: relative !important;
+}
+
+/* Base button styling */
 .slider-btn {
     position: absolute !important;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    font-size: 20px;
-    padding: 12px 16px;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 22px;
+    padding: 10px 14px;
     cursor: pointer;
-    z-index: 30; /* Higher than iframe to stay clickable */
+    z-index: 100 !important; /* Forces buttons above video & image layers */
     border-radius: 8px;
     transition: background 0.3s ease;
 }
 
 .slider-btn:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
 }
 
-/* Pin to the left edge inside the card */
+/* Lock left arrow to left side of the photo */
 .prev-btn {
-    left: 15px !important;
+    left: 12px !important;
     right: auto !important;
 }
 
-/* Pin to the right edge inside the card */
+/* Lock right arrow to right side of the photo */
 .next-btn {
-    right: 15px !important;
+    right: 12px !important;
     left: auto !important;
+}
 }
 /* ------------------------------------------
    FIX: SLIDER IFRAME & INTERACTION
