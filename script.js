@@ -241,18 +241,25 @@ if(footerYear){
    HERO IMAGE SLIDER
 ========================================== */
 
-const slides = document.querySelectorAll(".slide");
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.media-slider .slide');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    let currentIndex = 0;
 
-let currentSlide = 0;
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
 
-function nextSlide() {
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
 
-    slides[currentSlide].classList.remove("active");
-
-    currentSlide = (currentSlide + 1) % slides.length;
-
-    slides[currentSlide].classList.add("active");
-
-}
-
-setInterval(nextSlide, 4000);
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+});
