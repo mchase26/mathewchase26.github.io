@@ -8,17 +8,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<title>Splunk Lab | Cybersecurity Portfolio</title>
+<title>Splunk SIEM Configuration Lab | Cybersecurity Portfolio</title>
 
 
 <link rel="stylesheet" href="../../styles.css">
 
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
 </head>
-
 
 
 <body>
@@ -36,15 +40,20 @@ MC<span>.</span>
 </div>
 
 
+
 <nav>
 
 <a href="../../index.html">
+
 Home
+
 </a>
 
 
 <a href="../../index.html#projects">
+
 Projects
+
 </a>
 
 
@@ -57,91 +66,90 @@ Projects
 
 
 
-<!-- Hero Section -->
+
+<!-- ==========================
+PROJECT HERO
+========================== -->
+
+<section class="hero project-hero">
 
 
-<section class="hero">
+    <!-- LEFT SIDE: TITLE + DESCRIPTION -->
+
+    <div class="hero-content">
 
 
-<div class="hero-content">
-
-
-<p class="tag">
-
-CYBERSECURITY PROJECT
-
-</p>
-
-
-
-<h1>
-
-Splunk
-
-<br>
-
-<span>
-Security Lab
-</span>
-
-</h1>
+        <p class="tag">
+            NETWORK SECURITY LAB
+        </p>
 
 
 
-<p class="hero-description">
+        <h1>
 
+            OPNsense Firewall 
 
-This project is currently being developed.
-Documentation, configuration details, screenshots,
-and testing results are being finalized and will be
-published soon.
+            <br>
 
+            <span>
+            Virtual Network Security Environment
+            </span>
 
-</p>
-
-
-
-
-
-<div class="project-card">
-
-
-<h3>
-
-Project Documentation Status
-
-</h3>
-
-
-<p>
-
-I am actively working on documenting this project
-and preparing the technical walkthrough.
-
-</p>
-
-
-<br>
-
-
-<p>
-
-<strong>
-Last Updated:
-</strong>
-
-July 12, 2026
-
-</p>
+        </h1>
 
 
 
-</div>
+        <p class="hero-description">
+
+            Designed and configured a virtual firewall environment
+            using OPNSense to practice network security, routing,
+            NAT, DHCP, and firewall administration.
+    
+
+        </p>
 
 
 
-</div>
+    </div>
 
+
+
+
+
+    <!-- RIGHT SIDE: TOPOLOGY IMAGE -->
+
+    <section class="section">
+
+
+<h2 class="section-title">
+
+Lab Network Topology
+</h2>
+
+    <div class="hero-card">
+
+
+        <img
+
+        src="screenshots/OpnSense_Lab_Topology.png"
+
+        alt="OPNsense Network Topology"
+
+        class="topology-image"
+
+        width = "850"
+
+        style="height: auto;"
+
+
+        >
+
+
+    </div>
+
+
+
+    </section>
 
 </section>
 
@@ -149,10 +157,7 @@ July 12, 2026
 
 
 
-
-
-
-<!-- Project Roadmap -->
+<!-- Project Overview -->
 
 
 <section class="section">
@@ -160,107 +165,103 @@ July 12, 2026
 
 <h2 class="section-title">
 
-Upcoming Documentation
+Project Overview
+
+</h2>
+
+
+<div class="about-box">
+
+
+<p>
+
+The objective of this lab was to deploy OPNsense as a
+virtual firewall between an internal LAN network and the
+internet-facing WAN interface.
+
+</p>
+
+
+<br>
+
+
+<p>
+
+This project simulated a small business network where
+security policies, traffic filtering, and network services
+must be properly configured and maintained.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Environment -->
+
+
+<section class="section">
+
+
+<h2 class="section-title">
+
+Lab Environment
 
 </h2>
 
 
 
-<div class="projects">
+<div class="skills">
 
 
+<div class="skill">
 
-<div class="project-card">
-
-
-<h3>
-
-Lab Overview
-
-</h3>
-
-
-<p>
-
-Purpose, objectives, and cybersecurity
-skills demonstrated.
-
-</p>
-
+Oracle Virtual Box
 
 </div>
 
 
+<div class="skill">
 
-
-<div class="project-card">
-
-
-<h3>
-
-Architecture
-
-</h3>
-
-
-<p>
-
-Network diagrams, system design,
-and infrastructure layout.
-
-</p>
-
+OPNSense Firewall
 
 </div>
 
 
+<div class="skill">
 
-
-
-<div class="project-card">
-
-
-<h3>
-
-Implementation
-
-</h3>
-
-
-<p>
-
-Configuration steps, commands,
-and security controls implemented.
-
-</p>
-
+WireShark
 
 </div>
 
 
+<div class="skill">
 
-
-
-<div class="project-card">
-
-
-<h3>
-
-Testing Results
-
-</h3>
-
-
-<p>
-
-Validation testing, screenshots,
-and troubleshooting documentation.
-
-</p>
-
+tcpdump
 
 </div>
 
+    
+<div class="skill">
+
+Linux Ubuntu Server
+
+</div>
+
+
+<div class="skill">
+
+Windows 11 Client
+
+</div>
 
 
 </div>
@@ -275,52 +276,476 @@ and troubleshooting documentation.
 
 
 
-<!-- Closing Section -->
 
+<!-- ==========================
+CONFIGURATION COMPLETED
+========================== -->
 
 <section class="section">
 
+<h2 class="section-title">
 
-<div class="about-box">
-
-
-<h2>
-
-Coming Soon
+Lab Screenshots and Description
 
 </h2>
+<!-- Startup -->
 
+<div class="config-item">
 
-<p>
+    <div class="config-image">
 
+        <img src="screenshots/OPNSense_Startup.png"
+             alt="OPNSense Startup">
 
-Thank you for checking out this project.
-I am continuously expanding my cybersecurity
-portfolio by building, documenting, and testing
-new security environments.
+    </div>
 
+    <div class="config-text">
 
-</p>
+        <h3>OPNSense Firewall Terminal Startup</h3>
 
+        <p>
 
+        Installed OPNSense Firewall OS into Virtualbox. Terminal started up
+        for firwall configuration.
 
-<br>
+        </p>
 
-
-
-<p>
-
-
-New updates will be added as the project
-documentation is completed.
-
-
-</p>
-
-
+    </div>
 
 </div>
 
+<!-- WAN -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/OPNSense_WAN_LAN_IP_Assignment.png"
+             alt="WAN Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>WAN Configuration</h3>
+
+        <p>
+
+        Configured WAN and LAN in terminal. Statically assigned
+        LAN IP address as the gateway to proper VLAN (192.168.10.1).
+        WAN IP dynamically assigned to NAT adapter on VM (10.0.x.x).
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- Connectivity -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/OPNSense_Ping_Confirmation.png"
+             alt="LAN Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Connectivity Confirmation</h3>
+
+        <p>
+
+        Confirmed successful LAN-to-WAN communication by pinging 8.8.8.8 and google.com, 
+        validating Internet connectivity and functional DNS resolution.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- Windows Network Connectivity -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_IP_Config.png"
+             alt="Windows Network Configuration">
+
+    </div>
+    
+    <div class="config-text">
+
+        <h3>Windows 11 IP Assignment & Network Connectivity</h3>
+
+        <p>
+
+        Manually configured Windows 11 internet adapter to proper VLAN (192.168.10.10).
+        used ipconfig command to verify IP address and Gateway.
+        Verified connectivity by pinging 8.8.8.8 and Google.com.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- IP Config-->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_Ping_Google.png"
+             alt="NAT Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify Connectivity on Windows Device</h3>
+
+        <p>
+
+        Used Ping to verify connectivity on the internet using 8.8.8.8
+        and Google.com. 
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- FIREWALL -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_network_config.png"
+             alt="Firewall Rules">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Ubuntu Server Network Configuration</h3>
+
+        <p>
+
+        Configured yaml file in nano to assign static IP address and Default
+        Gateway address. Ubuntu Server was put on VLAN 192.168.10.20/24.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Ubuntu Network Connectivity -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_Ping.png"
+             alt="NAT Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify Ubuntu Server Connectivity</h3>
+
+        <p>
+
+        Used Ping to verify connectivity on the internet using 8.8.8.8
+        and Google.com. 
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- Firewall Configuration -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_Port_Config.png"
+             alt="Firewall Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Firewall GUI Configuration</h3>
+
+        <p>
+
+        Logged into the firewall's GUI on the Windows client. Blocked 
+        insecure ports on LAN side, such as Server Message Block (SMB port 445), Telnet (port 23),
+        and Remote Desktop Protocol (port 3389). 
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Verify ports are blocked -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_port_status_update.png"
+             alt="port status">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify ports are being blcoked</h3>
+
+        <p>
+
+        Went into powershell and ran "Test-NetConnection" on the Ubuntu Server Host for
+        ports 445 and 80. The cmdlet verifies that port 445 did NOT succeed a TCP test,
+        but port 80 did, as the firewall rule has port 80 as "Allowed" in the rule set.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Apache Server Config -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_Apache_status.png"
+             alt="Apache Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Apache Web Server Online</h3>
+
+        <p>
+
+        Installed and updated Apache Web Server on Ubuntu. Status shows that it
+        is online and active via IP address 192.168.10.20. 
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- Verify Apache GUI -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_Apache_Webpage.png"
+             alt="Apache Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Apache Web Server Online</h3>
+
+        <p>
+
+        Verified that Apache is online by accessing the GUI on the
+        Windows host device via 192.168.10.20.
+        All services (Apache, OPNSense, and Windows) are actively online
+        and running in this state. 
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Packet Capture Analysis -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_icmp_ws.png"
+             alt="Packet Capture Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>ICMP Packket Analysis</h3>
+
+        <p>
+
+        Verified that packets are moving throughout the network.
+        Started with ICMP, we can verify that we see replies and 
+        requests from all devices on the network. Starting with
+        OPNSense (192.168.10.1) to the Windows VLAN (192.168.10.10).
+        We also verified the Apache Server (192.168.10.20) is receiving
+        replies from the Windows machine (192.168.10.10).
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- TCP Handshake -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_Win11 Host_tcp_3whs.png"
+             alt="TCP Configuration">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>Verify TCP Communication</h3>
+
+        <p>
+
+        In Wireshark, the packets captured a successfull HTTP
+        communication between the Windows 11 Client and the 
+        Apache Web Server through the OPNSense Firewall. Traffice confirmed TCP
+        Connectivity, HTTP Get Requests, and HTTP 200 OK responses while demonstrating
+        packet inspection and network troubleshooting skills. 
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- TCP Dump -->
+
+<div class="config-item">
+
+    <div class="config-image">
+
+        <img src="screenshots/VirtualBox_UbuntuS_tcp_dump_p80.png"
+             alt="TCP Dump">
+
+    </div>
+
+    <div class="config-text">
+
+        <h3>tcpdump analysis</h3>
+
+        <p>
+
+        I also used tcpdump to capture packets on the Apache Server side.
+        The packet capture confirms successful TCP communication, HTTP GET requests,
+        HTTP 200 OK responses from the Apache web server, and proper routing through the OPNsense firewall.
+        This analysis demonstrates practical experience with packet inspection, protocol analysis,
+        and troubleshooting enterprise network communications.
+
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- ==========================
+LESSONS LEARNED & INCIDENT REPORT
+========================== -->
+
+<section class="section">
+
+<h2 class="section-title">
+
+Project Summary
+
+</h2>
+
+<div class="summary-grid">
+
+    <!-- LEFT COLUMN -->
+
+    <div class="summary-card">
+
+        <h3>Lessons Learned</h3>
+
+        <ul>
+
+            <li>Static IP configuration requires proper gateway assignment.</li>
+            
+            <li>Configured WAN and LAN interfaces.</li>
+
+            <li>Implemented DHCP services.</li>
+
+            <li>Validated DNS resolution.</li>
+            
+            <li>Firewall rules should follow least privilege for security.</li>
+
+            <li>Packet captures validate firewall behavior.</li>
+
+            <li>Created and tested firewall rules.</li>
+
+            <li>Troubleshot network connectivity issues.</li>
+
+        </ul>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+
+    <div class="summary-card">
+
+        <h3>Incident  Report</h3>
+
+        <p><strong>Severity:</strong> Informational</p>
+
+        <p><strong>Status:</strong> Resolved</p>
+
+        <p><strong>Root Cause:</strong> Internal Linux server was unable to communicate with the firewall gateway.</p>
+
+        <p><strong>Impact:</strong> Internal hosts could not access external resources until the issue was corrected.</p>
+
+        <p><strong>Investigation: </strong> Verified IP addressing, subnet mask, and routing. Inspected ARP cache and observed failed neighbor resolution. Determined the firewall LAN interface was assigned to the incorrect virtual adapter.</p>
+
+        <p><strong>Resolution:</strong> Corrected the OPNsense interface assignment, restored ARP communication, and validated connectivity using ICMP, HTTP, and packet captures.</p>
+
+        <p><strong>Verification:</strong> Confirmed successful host-to-host communication, Internet access, Apache web service availability, and firewall log entries by using Packet Capture Toools and Ping.</p>
+
+
+    </div>
+
+</div>
 
 </section>
 
@@ -332,15 +757,14 @@ documentation is completed.
 
 <footer>
 
-
 <p>
 
 © 2026 Mat C | Cybersecurity Portfolio
 
 </p>
 
-
 </footer>
+
 
 
 
@@ -349,6 +773,4 @@ documentation is completed.
 
 </body>
 
-
 </html>
-
