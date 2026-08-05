@@ -255,32 +255,5 @@ Current areas of focus include:
 - Cloud Security
 - Security Automation
 
----
-
-# 📬 Contact
-
-## GitHub
-
-https://github.com/YOURUSERNAME
-
-## LinkedIn
-
-https://linkedin.com/in/YOURPROFILE
-
-## Email
-
-your.email@email.com
-
----
-
-# ⭐ Thank You
-
-Thank you for taking the time to visit my portfolio.
-
-I am continuously adding new projects and improving existing documentation as I expand my cybersecurity knowledge.
-
-If you're a recruiter, hiring manager, or fellow cybersecurity enthusiast, feel free to explore the projects and follow my journey.
-
----
 
 **Last Updated:** July 2026
