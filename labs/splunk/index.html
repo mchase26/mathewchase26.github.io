@@ -415,12 +415,12 @@ Lab Screenshots and Description
 
     <div class="config-text">
 
-        <h3>Verify Connectivity on Windows Device</h3>
+        <h3>Verify Host Connectivity on Splunk Console</h3>
 
         <p>
 
-        Used Ping to verify connectivity on the internet using 8.8.8.8
-        and Google.com. 
+        Ran an SPL search for host="Win11Host" to confirm
+        continuous log ingestion from the endpoint into Splunk Search & Reporting.
 
         </p>
 
@@ -446,9 +446,10 @@ Lab Screenshots and Description
         <h3>Event Dashboard Creation</h3>
 
         <p>
-
-        Configured yaml file in nano to assign static IP address and Default
-        Gateway address. Ubuntu Server was put on VLAN 192.168.10.20/24.
+            
+        Created a custom dashboard in SIEM Visualizing security metrics,
+        including timeline charts for successful vs. failed logins
+        and a bar chart breakdown of top Windows Event IDs.
 
         </p>
 
@@ -469,12 +470,12 @@ Lab Screenshots and Description
 
     <div class="config-text">
 
-        <h3>Incorrect Login on User</h3>
+        <h3>Failed Login Activity</h3>
 
         <p>
 
-        Used Ping to verify connectivity on the internet using 8.8.8.8
-        and Google.com. 
+        Intentionally triggering authentication failures
+        on the Windows lock screen to validate login failure tracking. 
 
         </p>
 
@@ -500,9 +501,9 @@ Lab Screenshots and Description
 
         <p>
 
-        Logged into the firewall's GUI on the Windows client. Blocked 
-        insecure ports on LAN side, such as Server Message Block (SMB port 445), Telnet (port 23),
-        and Remote Desktop Protocol (port 3389). 
+        Structured a custom Security Operations Dashboard panel
+        in Splunk to display failed login events, target hosts, failure reasons,
+        and source IP details. 
 
         </p>
 
@@ -526,10 +527,8 @@ Lab Screenshots and Description
         <h3>Run Powershell as Administrator</h3>
 
         <p>
-
-        Went into powershell and ran "Test-NetConnection" on the Ubuntu Server Host for
-        ports 445 and 80. The cmdlet verifies that port 445 did NOT succeed a TCP test,
-        but port 80 did, as the firewall rule has port 80 as "Allowed" in the rule set.
+        Opened Powershell as administrator to trigger an
+        event in Splunk.
         </p>
 
     </div>
@@ -549,12 +548,12 @@ Lab Screenshots and Description
 
     <div class="config-text">
 
-        <h3>Splunk Confirmation Code | Run as Administrator </h3>
+        <h3>Analyzing Event ID 4672 </h3>
 
         <p>
 
-        Installed and updated Apache Web Server on Ubuntu. Status shows that it
-        is online and active via IP address 192.168.10.20. 
+        Reviewing Event ID 4672 (Special privileges assigned to new logon)
+        in Splunk to detect elevated administrator login activity on Win11Host.
 
         </p>
 
@@ -576,14 +575,13 @@ Lab Screenshots and Description
 
     <div class="config-text">
 
-        <h3>New User Creation in Windowws</h3>
+        <h3>Generating New User in PowerShell</h3>
 
         <p>
 
-        Verified that Apache is online by accessing the GUI on the
-        Windows host device via 192.168.10.20.
-        All services (Apache, OPNSense, and Windows) are actively online
-        and running in this state. 
+        Executing net user TestUser password /add
+        via PowerShell on the target host 
+        to generate local user management log entries. 
 
         </p>
 
@@ -608,12 +606,9 @@ Lab Screenshots and Description
 
         <p>
 
-        Verified that packets are moving throughout the network.
-        Started with ICMP, we can verify that we see replies and 
-        requests from all devices on the network. Starting with
-        OPNSense (192.168.10.1) to the Windows VLAN (192.168.10.10).
-        We also verified the Apache Server (192.168.10.20) is receiving
-        replies from the Windows machine (192.168.10.10).
+        Searching ingested Windows Security logs
+        in Splunk to confirm the capture of Event ID 4720 
+        (A user account was created).
 
         </p>
 
@@ -621,74 +616,6 @@ Lab Screenshots and Description
 
 </div>
 
-<!-- TCP Handshake -->
-
-<div class="config-item">
-
-    <div class="config-image">
-
-        <img src="screenshots/VirtualBox_Win11 Host_tcp_3whs.png"
-             alt="TCP Configuration">
-
-    </div>
-
-    <div class="config-text">
-
-        <h3>Verify TCP Communication</h3>
-
-        <p>
-
-        In Wireshark, the packets captured a successfull HTTP
-        communication between the Windows 11 Client and the 
-        Apache Web Server through the OPNSense Firewall. Traffice confirmed TCP
-        Connectivity, HTTP Get Requests, and HTTP 200 OK responses while demonstrating
-        packet inspection and network troubleshooting skills. 
-
-        </p>
-
-    </div>
-
-</div>
-
-<!-- TCP Dump -->
-
-<div class="config-item">
-
-    <div class="config-image">
-
-        <img src="screenshots/VirtualBox_UbuntuS_tcp_dump_p80.png"
-             alt="TCP Dump">
-
-    </div>
-
-    <div class="config-text">
-
-        <h3>tcpdump analysis</h3>
-
-        <p>
-
-        I also used tcpdump to capture packets on the Apache Server side.
-        The packet capture confirms successful TCP communication, HTTP GET requests,
-        HTTP 200 OK responses from the Apache web server, and proper routing through the OPNsense firewall.
-        This analysis demonstrates practical experience with packet inspection, protocol analysis,
-        and troubleshooting enterprise network communications.
-
-        </p>
-
-    </div>
-
-</div>
-
-</section>
-
-
-<!-- ==========================
-LESSONS LEARNED & INCIDENT REPORT
-========================== -->
-
-<section class="section">
-
-<h2 class="section-title">
 
 Project Summary
 
