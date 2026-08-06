@@ -918,50 +918,23 @@ nav a:hover {
 
 
 
-/* ==========================================
-   CONTACT
-========================================== */
-
-
-.contact {
-
-
-    text-align:center;
-
-
-    font-size:
-
-    18px;
-
-
-    color:
-
-    var(--silver);
-
-
+/* Center the Contact section heading and contents */
+#contact {
+    text-align: center;
 }
 
+/* Ensure the contact icons flexbox stays centered */
+#contact .contact div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-
-/* ==========================================
-   FOOTER
-========================================== */
-
+/* Center the footer text */
 footer {
-
-    text-align:center;
-
-    padding:30px;
-
-    border-top:1px solid var(--border);
-
-    color:var(--silver);
-
+    text-align: center;
 }
-
 
 /* ==========================================
    OPNsense Firewall Lab
