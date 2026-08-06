@@ -328,12 +328,13 @@ Lab Screenshots and Description
 
     <div class="config-text">
 
-        <h3>Universasl Forwarding Configuration</h3>
+        <h3>Configured Universal Forwarding Port</h3>
 
         <p>
 
-        In Splunk Admin Consoloe, I configured all data
-        to be received on port 9997.
+        Enabled TCP port 9997 under Splunk Forwarding 
+        and receiving settings to allow forwarders to
+        transmit telemetry to the Splunk instance.
 
         </p>
 
@@ -356,12 +357,13 @@ Lab Screenshots and Description
 
     <div class="config-text">
 
-        <h3>Connectivity Confirmation</h3>
+        <h3>Verify Active Forwarder Connection</h3>
 
         <p>
 
-        Confirmed successful LAN-to-WAN communication by pinging 8.8.8.8 and google.com, 
-        validating Internet connectivity and functional DNS resolution.
+        Executed splunk list forward-server via PowerShell
+        to confirm the Universal Forwarder has established 
+        an active connection to the Splunk indexer at 192.168.10.30:9997.
 
         </p>
 
@@ -377,20 +379,20 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_Win11 Host_IP_Config.png"
+        <img src="screenshots/inputs.file.png"
              alt="Windows Network Configuration">
 
     </div>
     
     <div class="config-text">
 
-        <h3>Windows 11 IP Assignment & Network Connectivity</h3>
+        <h3>Universal Forwarder Stanza Confirmation</h3>
 
         <p>
 
-        Manually configured Windows 11 internet adapter to proper VLAN (192.168.10.10).
-        used ipconfig command to verify IP address and Gateway.
-        Verified connectivity by pinging 8.8.8.8 and Google.com.
+        Customized the inputs.conf file on the Windows endpoint
+        to collect Application, Security, System, and Sysmon
+        logs into Splunk's main index.
 
         </p>
 
@@ -406,7 +408,7 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_Win11 Host_Ping_Google.png"
+        <img src="screenshots/Verify_win_host.png"
              alt="NAT Configuration">
 
     </div>
@@ -434,14 +436,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_UbuntuS_network_config.png"
+        <img src="screenshots/Suc_Fail_andEID_Screenshot.png"
              alt="Firewall Rules">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Ubuntu Server Network Configuration</h3>
+        <h3>Event Dashboard Creation</h3>
 
         <p>
 
@@ -460,14 +462,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_UbuntuS_Ping.png"
+        <img src="screenshots/Password_failed_attempts.png"
              alt="NAT Configuration">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Verify Ubuntu Server Connectivity</h3>
+        <h3>Incorrect Login on User</h3>
 
         <p>
 
@@ -487,14 +489,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_Win11 Host_Port_Config.png"
+        <img src="screenshots/SPL_Failed_Login_dash.png"
              alt="Firewall Configuration">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Firewall GUI Configuration</h3>
+        <h3>Confirmation of Failed Logins</h3>
 
         <p>
 
@@ -514,14 +516,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_Win11 Host_port_status_update.png"
+        <img src="screenshots/PS_Run_as_admin.png"
              alt="port status">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Verify ports are being blcoked</h3>
+        <h3>Run Powershell as Administrator</h3>
 
         <p>
 
@@ -540,14 +542,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_UbuntuS_Apache_status.png"
+        <img src="screenshots/Code_4672_admin.png"
              alt="Apache Configuration">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Apache Web Server Online</h3>
+        <h3>Splunk Confirmation Code | Run as Administrator </h3>
 
         <p>
 
@@ -567,14 +569,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_Win11 Host_Apache_Webpage.png"
+        <img src="screenshots/Create_new_user.png"
              alt="Apache Configuration">
 
     </div>
 
     <div class="config-text">
 
-        <h3>Apache Web Server Online</h3>
+        <h3>New User Creation in Windowws</h3>
 
         <p>
 
@@ -595,14 +597,14 @@ Lab Screenshots and Description
 
     <div class="config-image">
 
-        <img src="screenshots/VirtualBox_Win11 Host_icmp_ws.png"
+        <img src="screenshots/Account_Created_4720.png"
              alt="Packet Capture Configuration">
 
     </div>
 
     <div class="config-text">
 
-        <h3>ICMP Packket Analysis</h3>
+        <h3>Splunk Confirmation Code | Account Created</h3>
 
         <p>
 
