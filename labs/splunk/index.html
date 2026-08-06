@@ -659,24 +659,21 @@ Project Summary
 
     <div class="summary-card">
 
-        <h3>Incident  Report</h3>
+    <h3>Incident Report</h3>
 
-        <p><strong>Severity:</strong> Informational</p>
+    <p><strong>Severity:</strong> Informational</p>
 
-        <p><strong>Status:</strong> Resolved</p>
+    <p><strong>Status:</strong> In Progress</p>
 
-        <p><strong>Root Cause:</strong> Internal Linux server was unable to communicate with the firewall gateway.</p>
+    <p><strong>Objective:</strong> Deploy and configure Splunk Enterprise as a centralized Security Information and Event Management (SIEM) platform for monitoring Windows security events within the home lab environment.</p>
 
-        <p><strong>Impact:</strong> Internal hosts could not access external resources until the issue was corrected.</p>
+    <p><strong>Current Implementation:</strong> Successfully deployed Splunk Enterprise on an Ubuntu Server, configured the Splunk Universal Forwarder on a Windows endpoint, integrated Sysmon for enhanced endpoint telemetry, and validated centralized log collection and basic security event monitoring.</p>
 
-        <p><strong>Investigation: </strong> Verified IP addressing, subnet mask, and routing. Inspected ARP cache and observed failed neighbor resolution. Determined the firewall LAN interface was assigned to the incorrect virtual adapter.</p>
+    <p><strong>Planned Enhancements:</strong> Expand the SIEM environment by introducing additional Windows and Linux endpoints, external attacker systems, Active Directory integration, IDS/IPS log sources, and advanced detection rules to simulate a larger enterprise Security Operations Center (SOC).</p>
 
-        <p><strong>Resolution:</strong> Corrected the OPNsense interface assignment, restored ARP communication, and validated connectivity using ICMP, HTTP, and packet captures.</p>
+    <p><strong>Future Objectives:</strong> Develop custom dashboards, implement automated alerting, create advanced SPL detection queries, integrate threat intelligence sources, and perform comprehensive incident response investigations using realistic attack scenarios.</p>
 
-        <p><strong>Verification:</strong> Confirmed successful host-to-host communication, Internet access, Apache web service availability, and firewall log entries by using Packet Capture Toools and Ping.</p>
-
-
-    </div>
+    <p><strong>Project Status:</strong> The SIEM infrastructure is fully operational and serves as the foundation for future security monitoring, detection engineering, and threat hunting capabilities as the lab continues to evolve.</p>
 
 </div>
 
